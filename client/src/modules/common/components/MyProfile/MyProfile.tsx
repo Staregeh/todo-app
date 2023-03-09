@@ -21,7 +21,7 @@ export default function MyProfile() {
   const navigate = useNavigate();
   if (
     localStorage.getItem("JWT") === "" ||
-    localStorage.getItem("JWT") === null
+    localStorage.getItem("JWT") === undefined
   ) {
     navigate(APP_KEYS.ROUTER_KEYS.AUTH);
   }

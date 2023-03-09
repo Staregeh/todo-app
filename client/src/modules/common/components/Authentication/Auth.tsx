@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Typography, ThemeProvider, Button } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import theme from "../../consts/theme";
 import { SPACES } from "../../../theme";
 

@@ -8,7 +8,7 @@ The app uses MERN stack with TypeScript for both server and client sides.
 
 On the frontend, it features MUI components, Formik for the forms, and React-Query library for queries and state management (instead of Redux). The architecture is designed using services and const variables for better scalability and easy changes. The frontend is hosted on Netlify.
 
-On the backend, the app features JWT authentication with Passwort library, the latest version of Mongoose, and MongoDB Atlas to store data. The architecture is designed with try-catch middleware and flexibility in mind. The backend is hosted on Render. **Please note that since I am using the basic free plan, queries and requests may be slow. 
+On the backend, the app features JWT authentication with Passwort library, the latest version of Mongoose, and MongoDB Atlas to store data. The architecture is designed with try-catch middleware and flexibility in mind. The backend is hosted on Render. **Please note that since I am using the basic free plan, queries and requests may be slow.**
 
 ## Planned Features
 

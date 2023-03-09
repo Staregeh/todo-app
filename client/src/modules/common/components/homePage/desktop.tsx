@@ -17,7 +17,10 @@ import { SPACES } from "../../../theme";
 export default function Desktop() {
   const queryClient = useQueryClient();
   const navigate = useNavigate();
-  if (localStorage.getItem("JWT") === "") {
+  if (
+    localStorage.getItem("JWT") === "" ||
+    localStorage.getItem("JWT") === null
+  ) {
     navigate(APP_KEYS.ROUTER_KEYS.AUTH);
   }
   const { data, isLoading, error } = useQuery<ITodo[], Error>(

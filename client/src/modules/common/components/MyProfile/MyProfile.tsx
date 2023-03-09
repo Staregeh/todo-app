@@ -19,7 +19,10 @@ import { useFormik } from "formik";
 export default function MyProfile() {
   const [modal, setModal] = useState(false);
   const navigate = useNavigate();
-  if (localStorage.getItem("JWT") === "") {
+  if (
+    localStorage.getItem("JWT") === "" ||
+    localStorage.getItem("JWT") === null
+  ) {
     navigate(APP_KEYS.ROUTER_KEYS.AUTH);
   }
   const userService = new UserServiceAuth();

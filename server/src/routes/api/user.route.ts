@@ -10,7 +10,7 @@ const isExistsMiddleware = new IsExistsMiddleware(User);
 
 router.post(
   "/signup",
-  tryCatchMiddleware(isExistsMiddleware.isExists.bind(isExistsMiddleware)),
+  //tryCatchMiddleware(isExistsMiddleware.isExists.bind(isExistsMiddleware)),
   tryCatchMiddleware(userController.signUp.bind(userController))
 );
 router.post(
